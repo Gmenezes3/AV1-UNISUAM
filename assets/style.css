@@ -4,3 +4,8 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+
+fieldset{
+    display: flex;
+    align-items: center;
+}

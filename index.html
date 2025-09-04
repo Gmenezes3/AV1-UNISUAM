@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avaliação Formadora I – Programação Backend com PHP</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
     <h1>Formulario</h1>
-    <form action="formulario.php" method="post">
+    <form action="assets/formulario.php" method="post">
         <fieldset>
             <legend>Média</legend>
             <label for="name">Aluno:</label>
@@ -25,12 +25,15 @@
             <br>
             <label for="nota1">Nota 1:</label>
             <br>
-            <input type="number">
+            <input type="number" name="nota1" id="nota1" step="0.01" required>
             <br>
             <br>
             <label for="nota2">Nota 2:</label>
             <br>
-            <input type="number">
+            <input type="number" name="nota2" id="nota2" step="0.01" required>
+            <br>
+            <br>
+            <button type="submit">Calcular</button>
         </fieldset>
     </form>
 

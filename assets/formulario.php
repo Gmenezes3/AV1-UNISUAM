@@ -1,15 +1,18 @@
 <?php
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $nota1 = $_POST["nota1"];
+    $nota2 = $_POST["nota2"];
+    $name = $_POST["name"];
+}
 
-$nota1 = ;
-$nota2 = ;
 $media = ($nota1 + $nota2)/2;
 
 if ($media >= 7){
-    echo "APROVADO. Sua média foi: $media";
+    echo "$name, sua media final foi: $media. APROVADO";
 } 
-elseif ( $nota >= 4 || $nota <= 6.9 ) {
-    echo "Sua média final foi: $media. PROVA FINAL";
+elseif ( $media >= 4 && $media <= 6.9 ) {
+    echo "$name, Sua média final foi: $media. RECUPERAÇÃO";
     } 
 else
-    echo "Sua Média foi: $media. REPROVADO."
+    echo "$name, sua média final foi: $media. REPROVADO."
 ?>
