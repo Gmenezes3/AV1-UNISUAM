@@ -11,7 +11,6 @@ O sistema consiste em um formulário web para cálculo da média final de um alu
 
 ## Funcionalidades
 
-- Formulário responsivo para entrada dos dados do aluno.
 - Cálculo automático da média das notas.
 - Exibição da situação do aluno conforme a média:
   - **Aprovado** (média ≥ 7)
@@ -23,7 +22,7 @@ O sistema consiste em um formulário web para cálculo da média final de um alu
 
 - [`index.html`](index.html): Página principal com o formulário.
 - [`resultado.php`](resultado.php): Script PHP que processa os dados e exibe o resultado.
-- [`styles.css`](styles.css): Estilos para layout e responsividade.
+- [`styles.css`](styles.css): Estilos para layout.
 - [`README.md`](README.md): Documentação do projeto.
 
 ## Como Executar
